@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developers.EduManage.Controller.SignupFormController">
+   <children>
+      <TextField fx:id="txtxpassword" layoutX="226.0" layoutY="148.0" prefHeight="31.0" prefWidth="356.0" promptText="Password" />
+      <Button layoutX="303.0" layoutY="206.0" mnemonicParsing="false" onAction="#signuponaction" prefHeight="31.0" prefWidth="185.0" text="SignUp" />
+      <Button layoutX="303.0" layoutY="283.0" mnemonicParsing="false" onAction="#alreadyhaveanaccountonaction" prefHeight="31.0" prefWidth="185.0" text="Already have an Account" />
+      <Label layoutX="385.0" layoutY="244.0" text="OR" />
+      <Label layoutX="307.0" layoutY="11.0" text="SignUp">
+         <font>
+
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtfirstname" layoutX="223.0" layoutY="55.0" prefHeight="31.0" prefWidth="168.0" promptText="First Name" />
+      <TextField fx:id="txtxlastname" layoutX="394.0" layoutY="55.0" promptText="Last Name" />
+      <TextField fx:id="txtxemail" layoutX="227.0" layoutY="103.0" prefHeight="31.0" prefWidth="356.0" promptText="Email" />
+      <ImageView fitHeight="296.0" fitWidth="215.0" layoutX="8.0" layoutY="31.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/istockphoto-491632268-612x612.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

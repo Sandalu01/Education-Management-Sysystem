@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contex" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.developers.EduManage.Controller.LoginFormController">
+   <children>
+      <Label layoutX="22.0" layoutY="14.0" text="Login">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Separator layoutY="62.0" prefHeight="4.0" prefWidth="609.0" />
+      <TextField fx:id="txtxtemzil" layoutX="16.0" layoutY="82.0" promptText="email" />
+      <TextField fx:id="txtpassword" layoutX="16.0" layoutY="138.0" promptText="password" />
+      <Hyperlink layoutX="149.0" layoutY="186.0" onAction="#fogotpasswordonaction" text="ForgotPassword" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Hyperlink>
+      <Button layoutX="22.0" layoutY="240.0" mnemonicParsing="false" onAction="#loginonaction" prefHeight="31.0" prefWidth="114.0" text="Login" />
+      <Label layoutX="55.0" layoutY="287.0" text="OR">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="22.0" layoutY="320.0" mnemonicParsing="false" onAction="#createanaccountonaction" prefHeight="31.0" prefWidth="187.0" text="Create an acccount" />
+      <ImageView fx:id="txtemail" fitHeight="150.0" fitWidth="200.0" layoutX="-278.0" layoutY="-163.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="283.0" fitWidth="311.0" layoutX="292.0" layoutY="113.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asset/istockphoto-1222725146-612x612.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
